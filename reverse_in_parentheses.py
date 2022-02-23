@@ -6,5 +6,5 @@ def revers_in_par(s):
         if s[i] == ")":
             end = i
             print (end)
-            return reverseParentheses(s[:start] + s[start+1:end][::-1] + s[end+1:])
+            return revers_in_par(s[:start] + s[start+1:end][::-1] + s[end+1:])
     return s
