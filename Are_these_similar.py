@@ -16,3 +16,6 @@ def solution(a, b):
 
     else:
         return False
+    
+#single line
+sorted(A)==sorted(B) and sum([a!=b for a,b in zip(A,B)])<=2
