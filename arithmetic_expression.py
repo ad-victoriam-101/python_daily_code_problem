@@ -10,3 +10,9 @@ def solution(a,b,c):
         c (int): such that 1<=c<=20
     """
     return c in (a+b,a-b,a*b,a/b)
+
+#unit test
+
+assert solution(8,2,4) == True
+
+assert solution(8,3,2) == False
