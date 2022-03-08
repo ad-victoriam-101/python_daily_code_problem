@@ -10,6 +10,7 @@ def solution(inputArray):
         if compare > current_max:
             current_max = compare
     return current_max
-
+def solution2(a):
+    return max([abs(a[i]-a[i+1]) for i in range(len(a))])
 
 assert solution([2,4,1,0]) == 3
