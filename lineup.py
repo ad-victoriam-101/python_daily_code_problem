@@ -8,6 +8,8 @@ def solution(commands):
      The coach wants to know how many times the students end up facing the same direction.
     Given the list of commands the coach has given,
     count the number of such commands after which the students will be facing the same direction.
+
+
     :param commands: String consisting of characters 'L', 'R' and 'A' only.
     :return: The number of commands after which students face the same direction.
     """
