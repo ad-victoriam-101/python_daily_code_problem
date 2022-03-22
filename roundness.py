@@ -18,3 +18,7 @@ print(solution(902200100))
 
 assert solution(11000) == False
 assert solution(902200100) == True
+
+
+def solution_2(n):
+    return '0' in str(n).rstrip('0')
