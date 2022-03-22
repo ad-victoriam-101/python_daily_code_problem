@@ -8,3 +8,5 @@ def solution(k):
     return odd_sum-even_sum
     
 print(solution(5))
+assert solution(5) == -15
+
