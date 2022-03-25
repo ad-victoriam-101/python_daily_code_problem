@@ -7,6 +7,13 @@ def solution(picture):
             top_bottom_frame = '*' * (len(picture[0])+2)
             framed_picture.append(top_bottom_frame)
 
+
+#test comment
+
+
+# check if this unit test inside funcitonc all.
+
+
         framed_str = '*' + picture[i] + '*'
         framed_picture.append(framed_str)
 
@@ -15,3 +22,4 @@ def solution(picture):
             framed_picture.append(top_bottom_frame)
 
     return framed_picture
+print("test")
