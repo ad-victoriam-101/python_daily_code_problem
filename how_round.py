@@ -5,3 +5,10 @@ If it's less than 5 we round it to 0 if it's larger than or equal to 5 we round 
 (rounding to 10 means increasing the next significant digit by 1).
 The process stops immediately once there is only one non-zero digit left.
 """
+
+def solution(n)->int:
+    round_list = [(int(x)) for x in str(n)]
+    
+    return round_list
+
+print(solution(1234))
