@@ -17,4 +17,4 @@ def solution(n) -> int:
 
 
 if __name__ == '__main__':
-    print(solution(1234))
+    assert solution(1234) == 1000
