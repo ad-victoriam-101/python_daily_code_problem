@@ -21,4 +21,4 @@ def solution(commands):
         if not weird:
             total += 1
     return total
-#this is a test message
+# this is a test message
