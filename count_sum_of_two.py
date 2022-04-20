@@ -1,5 +1,5 @@
 """
-Given integers n,l and r. fint the number of ways to represent n
+Given integers n,l and r. find the number of ways to represent n
 as a sum of two ints A,B such that l<=A<=B<=r
 
 :param n: integer
@@ -25,7 +25,8 @@ def solution(n, l, r):
     #     i = j
     #
     # return return_numbers
-    return sum(1 for a in range(l, r+1) if l <= a <= n-a <= r)
+
+    return sum(1 for a in range(l, r + 1) if l <= a <= n - a <= r)
 
 
 assert (solution(6, 2, 4)) == 2
