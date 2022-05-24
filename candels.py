@@ -11,16 +11,16 @@ solution(solutionNumber, makeNew) = 9.
 """
 
 
-def candel_solution(c_n, new_requirement):
+def candle_solution(candlesNumber, makeNew):
     """
 
     Args:
-        c_n: integer
+        candlesNumber: integer
         The number of candles you have in your possession.
-        new_requirement:integer
+        makeNew:integer
         The number of leftovers that you can use up to create a new candle.
 
     Returns:
 
     """
-    pass
+    return candlesNumber + (candlesNumber - 1) // (makeNew - 1)
