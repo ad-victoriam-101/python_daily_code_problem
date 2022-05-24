@@ -10,6 +10,17 @@ For solutionNumber = 5 and makeNew = 2, the output should be
 solution(solutionNumber, makeNew) = 9.
 """
 
-def candel_solution(c_n,new_requirment) => int:
+def candel_solution(c_n,new_requirment):
+    """
+
+    Args:
+        c_n: integer
+        The number of candles you have in your possession.
+        new_requirment:integer
+        The number of leftovers that you can use up to create a new candle.
+
+    Returns:
+
+    """
     pass
 
