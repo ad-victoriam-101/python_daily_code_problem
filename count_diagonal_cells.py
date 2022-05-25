@@ -6,7 +6,7 @@ Imagine a white rectangular grid of n rows and m columns divided into two parts 
 
 Count the number of cells painted black.
 """
-from fractions import gcd
+from math import gcd
 
 
 def solution(n, m):
