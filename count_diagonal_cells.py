@@ -10,4 +10,5 @@ from fractions import gcd
 
 
 def solution(n, m):
+    # GCD helps here as it allows the function to be resistant to long short matrixes
     return m + n + gcd(m, n) - 2
