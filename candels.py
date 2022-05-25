@@ -26,4 +26,5 @@ def candle_solution(candlesNumber, makeNew):
     return candlesNumber + (candlesNumber - 1) // (makeNew - 1)
 
 
-assert candle_solution(5, 2) == 9
+if __name__ == "__main__":
+    assert candle_solution(5, 2) == 9
