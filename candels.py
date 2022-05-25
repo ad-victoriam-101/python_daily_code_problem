@@ -24,3 +24,6 @@ def candle_solution(candlesNumber, makeNew):
 
     """
     return candlesNumber + (candlesNumber - 1) // (makeNew - 1)
+
+
+assert candle_solution(5, 2) == 9
