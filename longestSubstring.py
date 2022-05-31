@@ -16,9 +16,9 @@ def len_of_two_sub_strings(string):
     max_char = 0
     left = 0
     right = 1
-    def is_two_char(st):
-        return len(set(st))<=2
 
+    def is_two_char(st):
+        return len(set(st)) <= 2
 
     while (left < right):
         if is_two_char(string[left:right]) and right < len(string):
@@ -31,7 +31,9 @@ def len_of_two_sub_strings(string):
 
     return max_char
 
+
 print(len_of_two_sub_strings("ababccde"))
+
 
 def lengthOfLongestSubstringTwoDistinct(s):
     maxLen = 0  # this will be returned at the end, and it maintains my current max found
@@ -52,4 +54,6 @@ def lengthOfLongestSubstringTwoDistinct(s):
             left += 1
 
     return maxLen
+
+
 print(lengthOfLongestSubstringTwoDistinct("ababccde"))
