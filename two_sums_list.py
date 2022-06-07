@@ -8,15 +8,11 @@ You can return the answer in any order.
 
 
 def solution(nums, target):
+    left = 0
     right = 1
-    for left in range(len(nums) - 1):
-        while right < (len(nums)):
-            print(left, right)
-            if nums[left] + nums[right] == target:
-                return [left, right]
-            else:
-                right += 1
+    while right < len(nums)-1:
         print(left,right)
+        right += 1
 
 
 print(solution([2, 7, 11, 15], 9))
