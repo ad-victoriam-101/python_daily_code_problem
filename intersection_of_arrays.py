@@ -17,3 +17,7 @@ def solution(nums1, nums2):
         Input: nums1 = [1,2,2,1], nums2 = [2,2]
         Output: [2,2]
     """
+    print([i for i in nums1 if i in nums2])
+
+
+solution([4, 9, 5, 4], [9, 4, 9, 8, 4, 5])
