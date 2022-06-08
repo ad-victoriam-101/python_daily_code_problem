@@ -17,7 +17,25 @@ def solution(nums1, nums2):
         Input: nums1 = [1,2,2,1], nums2 = [2,2]
         Output: [2,2]
     """
-    print([i for i in nums1 if i in nums2])
+    from collections import Counter
+    nums1_dic = {}
+    nums2_dic = {}
+    return_list = []
+    for i in nums1:
+        if i not in nums1_dic:
+            nums1_dic[i] = 1
+        else:
+            nums1_dic[i] += 1
+    for j in nums2:
+        if j not in nums2_dic:
+            nums2_dic[j] = 1
+        else:
+            nums2_dic[j] += 1
+    for k in nums1_dic.keys():
+        if k in nums2_dic.keys():
+            return_list.append(k)
+
+    return return_list
 
 
-solution([4, 9, 5, 4], [9, 4, 9, 8, 4, 5])
+print(solution([4, 9, 5, 4], [9, 4, 9, 8, 4, 5]))
