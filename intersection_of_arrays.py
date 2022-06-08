@@ -4,7 +4,9 @@ return an array of their intersection.
 Each element in the result must appear as many times as it shows in both arrays
 and you may return the result in any order.
 """
-def solution(nums1,nums2):
+
+
+def solution(nums1, nums2):
     """
     Args:
         nums1: list of ints
