@@ -18,23 +18,29 @@ def solution(nums1, nums2):
         Output: [2,2]
     """
     from collections import Counter
-    nums1_dic = {}
-    nums2_dic = {}
+    # nums1_dic = {}
+    # nums2_dic = {}
+    # return_list = []
+    # for i in nums1:
+    #     if i not in nums1_dic:
+    #         nums1_dic[i] = 1
+    #     else:
+    #         nums1_dic[i] += 1
+    # for j in nums2:
+    #     if j not in nums2_dic:
+    #         nums2_dic[j] = 1
+    #     else:
+    #         nums2_dic[j] += 1
+    # for k in nums1_dic.keys():
+    #     if k in nums2_dic.keys():
+    #         return_list.append(k)
+    #
+    # return return_list
+    nums1_dic,nums2_dic = Counter(nums1),Counter(nums2)
     return_list = []
-    for i in nums1:
-        if i not in nums1_dic:
-            nums1_dic[i] = 1
-        else:
-            nums1_dic[i] += 1
-    for j in nums2:
-        if j not in nums2_dic:
-            nums2_dic[j] = 1
-        else:
-            nums2_dic[j] += 1
-    for k in nums1_dic.keys():
-        if k in nums2_dic.keys():
-            return_list.append(k)
-
+    for i in nums1_dic.keys():
+        if i in nums2_dic.keys():
+            return_list.append(i)
     return return_list
 
 
