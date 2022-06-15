@@ -7,6 +7,7 @@ def unique_in_list(l1, l2):
 
     return_list = []
     list_comp = [i for i in l1 if i in l2]
+    print(list_comp)
     for char in l1:
         if char in l2:
             return_list.append(char)
