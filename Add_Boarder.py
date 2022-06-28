@@ -4,22 +4,21 @@ def solution(picture):
 
     for i in range(len(picture)):
         if i == 0:
-            top_bottom_frame = '*' * (len(picture[0])+2)
+            top_bottom_frame = '*' * (len(picture[0]) + 2)
             framed_picture.append(top_bottom_frame)
 
+        # test comment
 
-#test comment
-
-
-# check if this unit test inside funcitonc all.
-
+        # check if this unit test inside funcitonc all.
 
         framed_str = '*' + picture[i] + '*'
         framed_picture.append(framed_str)
 
-        if i == len(picture)-1:
-            top_bottom_frame = '*' * (len(picture[0])+2)
+        if i == len(picture) - 1:
+            top_bottom_frame = '*' * (len(picture[0]) + 2)
             framed_picture.append(top_bottom_frame)
 
     return framed_picture
+
+
 print("test")
