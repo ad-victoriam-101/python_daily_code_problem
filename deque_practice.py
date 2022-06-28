@@ -2,10 +2,10 @@ import collections
 
 deque_colors = collections.deque(["red", "green", "white"])
 print(deque_colors)
-#append to the left.
+# append to the left.
 deque_colors.appendleft("pink")
 print(deque_colors)
-#append to the right
+# append to the right
 deque_colors.append("orange")
 print(deque_colors)
 # pip from the right
