@@ -17,3 +17,6 @@ print(deque_colors)
 # reverse the order
 deque_colors.reverse()
 print(deque_colors)
+
+
+def internal_deque(li, rev = False):
