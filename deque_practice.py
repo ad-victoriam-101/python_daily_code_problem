@@ -20,3 +20,4 @@ print(deque_colors)
 
 
 def internal_deque(li, rev = False):
+    pass
