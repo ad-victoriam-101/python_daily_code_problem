@@ -22,6 +22,8 @@ def solution_2(nums1, m, nums2, n):
             i += 1
     nums1.sort()
 
+
+
 print(solution_2([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3))
 (solution([1], 1, [], 0))
 (solution([0], 0, [1], 1))
