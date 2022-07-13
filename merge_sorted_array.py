@@ -12,8 +12,6 @@ def solution(nums1, m, nums2, n):
     print(nums1)
 
 
-
-
 def solution_2(nums1, m, nums2, n):
     i = 0
     for j in range(len(nums1)):
