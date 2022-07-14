@@ -35,3 +35,11 @@ print(b.keys()-a.keys())
 
 #find (key,values) pairs in dictionaries
 print(a.items()&b.items())
+
+#1.10. Removing Duplicates from a Sequence while Maintaining Order
+def dedupe(items):
+    seen = set()
+    for item in items:
+        if item not in seen:
+            yield item
+            seen.add(item)
