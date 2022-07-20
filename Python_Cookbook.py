@@ -43,8 +43,12 @@ def dedupe(items):
         if item not in seen:
             yield item
             seen.add(item)
-# Removing duplicates from a non-hash sequence while Mainting order
-def dedupe(items,key = None):
+
+dedupe_list = [1,2,3,4,5,5,3,2,4,5,6,7,8,9,9]
+unique_dedupe_list = list(dedupe(dedupe_list))
+print(unique_dedupe_list)
+# Removing duplicates from a non-hash sequence while Maintaining order
+def dedupe(items, key=None):
     seen = set()
     for item in items:
         val = item if key is None else key(item)
