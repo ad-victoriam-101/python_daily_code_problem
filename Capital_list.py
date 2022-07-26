@@ -4,3 +4,5 @@ def capital_index(string) -> list:
 
 if __name__ == "__main__":
     assert (capital_index("TEsT")) == [0, 1, 3]
+
+# Addin some changes for simplicity.
