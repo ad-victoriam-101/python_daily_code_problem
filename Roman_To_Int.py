@@ -11,5 +11,11 @@ roman_values = {
 }
 def roman_to_int(str):
     r_to_i = 0
-    for char in str:
-        pass
+    for index, numeral in enumerate(str):
+        if index<len(s)-1 and roman_values[numeral] < roman_values[str[index + 1]]:
+            r_to_i -= roman_values[numeral]
+        else:
+            r_to_i += roman_values[numeral]
+    return r_to_i
+
+print(roman_to_int('VI'))
