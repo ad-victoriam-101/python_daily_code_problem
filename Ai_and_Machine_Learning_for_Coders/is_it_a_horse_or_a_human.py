@@ -38,6 +38,9 @@ model = tf.keras.models.Sequential([
 
 print(model.summary())
 
+
+
+
 model.compile(
     loss='binary_crossentropy',
     optimizer=tf.optimizers.RMSprop(lr=0.001),
