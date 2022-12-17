@@ -11,8 +11,6 @@ class Solution:
             the maximum sum of possible values.
 
         """
-
-
         curSum = maxSum = nums[0]
         for num in nums[1:]:
             # python MAX() returns the max between two values
