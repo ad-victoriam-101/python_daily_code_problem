@@ -1,4 +1,5 @@
 class Solution:
+
     def maxSubArray(self, nums: List[int]) -> int:
         # kadane's algorithm
         """
