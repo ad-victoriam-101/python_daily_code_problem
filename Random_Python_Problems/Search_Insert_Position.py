@@ -1,3 +1,4 @@
+import bisect
 class Solution:
     def search_insert(self, nums: List[int], target: int) -> int:
         """
@@ -10,3 +11,15 @@ class Solution:
             ELSE: returns the index where it would be inserted in order.
 
         """
+        # Linear Search
+        if not nums:
+            return 0
+        for i, num in enumerate(nums):
+            if num >= target:
+                return i
+        return len(nums)
+        # Bisect Module
+        # import bisect assumed.
+        return bisect.bisect_left(nums,target)
+
+
