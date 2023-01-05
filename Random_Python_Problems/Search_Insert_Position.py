@@ -28,6 +28,7 @@ class Solution:
             ELSE: returns the index where it would be inserted in order.
 
         """
+
         # Linear Search
         if not nums:
             return 0
