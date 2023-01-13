@@ -8,3 +8,16 @@ You are playing the following Nim Game with your friend:
 
 Given n, the number of stones in the heap, return true if you can win the game assuming both you and your friend play optimally, otherwise return false.
 """
+
+
+class Solution:
+    def canWinNim(self, n: int) -> bool:
+        """
+        Args:
+            n: number of stones in the heap
+
+        Returns:
+            bool: if you can win or not.
+        """
+
+        return n % 4 != 0
