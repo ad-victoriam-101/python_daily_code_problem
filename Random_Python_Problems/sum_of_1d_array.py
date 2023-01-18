@@ -15,7 +15,7 @@ class Solution:
             start += nums[i]
         return return_list
 
-    def one_liner(self, nums: list[int]) -> list[int]:
+    def one_liner_accumulate(self, nums: list[int]) -> list[int]:
         return list(itertools.accumulate(nums))
 
 
