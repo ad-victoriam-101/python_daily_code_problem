@@ -17,6 +17,9 @@ class Solution:
     def max_wealth_sum(self, account: list[list[int]]) -> int:
         return max([sum(customer) for customer in account])
 
+    def max_sum_map(self, account: list[list[int]]) -> int:
+        return max(map(sum,account))
+
 
 s = Solution()
 
