@@ -11,4 +11,10 @@ def main():
         print(x)
 
 def notePlay(nums: list[])-> int:
-    pass
+    for i in range(len(nums)):
+        if nums[i]%2 == 0:
+            nums[i] = 1
+        else:
+            nums[i] = 0
+
+    return nums
